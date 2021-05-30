@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Cheeseburger",
+    "id": "1",
+    "price" : "6.99",
+    "recipes": ["Boeuf", "cheddar maturé", "pickles", "moutarde américaine", "ketchup"],
+    "amount": "20",
+    "image": "../img/burger-4.png"
+  },
+  {
+    "name": "Bacon Cheeseburger",
+    "id": "2",
+    "price" : "7.99",
+    "recipes": ["Boeuf", "cheddar maturé", "bacon", "pickles", "moutarde américaine", "ketchup"],
+    "amount": "15",
+    "image": "../img/burger-3.png"
+  },
+  {
+    "name": "Double Cheeseburger",
+    "id": "3",
+    "price" : "7.99",
+    "recipes": ["Double boeuf", "cheddar maturé", "pickles", "moutarde américaine", "ketchup"],
+    "amount": "16",
+    "image": "../img/burger-double-cheese.png"
+  },
+  {
+    "name": "Classique",
+    "id": "4",
+    "price" : "5.99",
+    "recipes": ["Boeuf", "salade", "cheddar maturé", "pickles", "tomate", "oignons", "mayonnaise", "sauce CQF"],
+    "amount": "20",
+    "image": "../img/burger-7.png"
+  },
+  {
+    "name": "Bleu",
+    "id": "5",
+    "price" : "7.99",
+    "recipes": ["Boeuf", "Fourme d'Ambert", "oignons caramélisés", "mayonnaise", "sauce CQF"],
+    "amount": "8",
+    "image": "../img/burger-5.png"
+  },
+  {
+    "name": "Buffalo",
+    "id": "6",
+    "price" : "7.99",
+    "recipes": ["Filet de poulet", "Fourme d'Ambert", "beignet d'oignon", "salade", "tomate", "mayonnaise", "Frank's Red Hot" ],
+    "amount": "8",
+    "image": "../img/burger-2.png"
+  },
+  {
+    "name": "Barbecue",
+    "id": "7",
+    "price" : "7.99",
+    "recipes": ["Boeuf", "cheddar maturé", "oignons caramélisés", "bacon", "beignet d'oignon", "mayonnaise", "sauce barbecue"],
+    "amount": "12",
+    "image": "../img/IMG_0012.jpg"
+  },
+  {
+    "name": "Carlifornie",
+    "id": "8",
+    "price" : "6.99",
+    "recipes": ["Filet de poulet", "cheddar maturé", "tomate", "salade", "mayonnaise", "guacamole"],
+    "amount": "15",
+    "image": "../img/californie.jpg"
+  },
+  {
+    "name": "Pull pork",
+    "id": "9",
+    "price" : "9.00",
+    "recipes": ["Cochon braisé", "sauce barbecue", "coleslaw", "mayonnaise"],
+    "amount": "6",
+    "image": "../img/pullpork.jpg"
+  }
+]

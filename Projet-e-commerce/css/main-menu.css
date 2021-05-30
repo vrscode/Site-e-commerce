@@ -1,0 +1,135 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}html{box-sizing:border-box}*,::after,::before{box-sizing:inherit}img,video{width:100%;vertical-align:middle;}
+
+
+:root {
+    --height-nav-bar: 80px;
+    --header-color: white; 
+    --main-color: grey;
+    --color-title: red;
+    --color-blue: #00b5e4;
+    --color-orange: #a20232;
+    --color-footer: rgb(20, 20, 20);
+    --color-gris-fonce: #343434;
+    --size-h1: 65px;
+    --size-h2: 50px;
+    --size-p-normal: 20px;
+    --size-p-article: 16px;
+    --font-family-title: 'Roboto', sans-serif;
+    --font-family-text: 'Montserrat', sans-serif;
+    --height-footer: 500px;
+}
+
+/* Mettre en place un display grid pour pouvoir placé mes articles dedans */
+main#main{
+    display: grid;
+    width: 100vw;
+    align-items: center;
+}
+main#main > h2{
+    color: var(--color-orange);
+    text-align: center;
+    font-family: var(--font-family-title);
+    font-size: var(--size-h2);
+    font-weight: 700;
+    padding: 60px 0;
+    text-decoration: none;
+    position: relative;
+}
+main#main > h2::after{
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 40px;
+    bottom: 40px;
+    left: calc(50% - (40px/2));
+    background-color: var(--color-orange);
+}
+
+
+main#main > section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 50px;
+    justify-content: center;
+}
+
+/* mise en place du style des articles */
+
+main#main > section>article.article-burger{
+    width: 300px;
+    color: white;
+    margin: 30px 30px;
+    padding: 0 35px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    overflow-wrap: break-word; /* Pas trouver autre chose pour que le texte ne partent en dehors du container article */
+}
+
+/* Définir la largeur de l'image qui va être intégré  */
+main#main > section > article.article-burger > div.photo{
+    display: block;
+    width: 90%;
+    margin: 15px auto;
+}
+main#main > section > article.article-burger > h4.product-name{
+    font-size: 1.1em;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    font-family: var(--font-family-title);
+    text-transform: uppercase;
+}
+main#main > section > article.article-burger > p{
+    font-size: 1.4em;
+    font-weight: 700;
+    font-family: var(--font-family-title);
+    margin: 10px 11.5px;
+    color: var( --color-orange );
+}
+main#main > section > article.article-burger p.recette{
+    color: black;
+    font-size: 0.9em;
+    font-family: var(--font-family-text);
+    max-width: 100%;
+}
+main#main > section > article.article-burger > div > input#menu{
+    margin: 5px 11.5px;
+    height: 12px;
+    color: black;
+}
+main#main > section > article.article-burger > div > label{
+    color: black;
+    font-family: var( --font-family-text );
+}
+article.article-burger > div#container-boisson-accomp-menu{
+    /* background-color: black; */
+    padding: 5px 5px 5px 5px;
+}
+article.article-burger > div#container-boisson-accomp-menu, hr{
+    display: none;
+}
+article.article-burger > div#container-boisson-accomp-menu > input {
+    margin-left: 15px;
+}
+article.article-burger > div#container-boisson-accomp-menu > label{
+    font-size: 13px;
+}
+
+/* Bouton acheté */
+
+
+button.selectionne{
+    background-color: var(--color-orange);
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+button.selectionne:hover{
+    background-color: #fff;
+    border: 2px solid var( --color-orange );
+    color: var( --color-orange );
+}
